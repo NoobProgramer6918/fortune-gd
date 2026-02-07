@@ -2,11 +2,40 @@
  * Include the Geode headers.
  */
 #include <Geode/Geode.hpp>
+#include <random>
+#include <iterator>
+#include <string>
+typedef std::string str;
 
 /**
  * Brings cocos2d and all Geode namespaces to the current scope.
  */
 using namespace geode::prelude;
+
+str CoolStrings[] {
+    "Hello, world!",
+    "welcome",
+    "hai:)",
+    "Did you know, that i don't know?",
+    "Once uppon a time there was many mods on geode, but gd update slaughtered them all",
+    "googoogaga",
+    "This mod is just a slightly moddiffied geode template",
+    "Can i has cheeseburger pls?",
+    "Hello player!",
+    "Geode is cool",
+    "FIRE IN THE HOLE!",
+    "water on da hill!",
+    "You can click to jump incase you forgor.",
+    "Making mods is cool."
+};
+
+str GetRandomString() {
+  std::random_device dev;
+  std::mt19937 rng(dev());
+  std::uniform_int_distribution<std::mt19937::result_type> dist(0, std::size(CoolStrings) - 1); // distribution in range [1, 6]
+  str ChosenString = CoolStrings[dist(rng)];
+  return ChosenString;
+}
 
 /**
  * `$modify` lets you extend and modify GD's classes.
@@ -95,6 +124,6 @@ class $modify(MyMenuLayer, MenuLayer) {
 	 * return type `void` and taking a `CCObject*`.
 	*/
 	void onMyButton(CCObject*) {
-		FLAlertLayer::create("Geode", "Hello from my custom mod!", "OK")->show();
+		FLAlertLayer::create("Fortune", GetRandomString(), "OK")->show();
 	}
 };

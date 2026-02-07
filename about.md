@@ -1,3 +1,3 @@
-# Template Mod
-
-Edit about.md to change this
+# Gd fortune
+## usage:
+Click the button

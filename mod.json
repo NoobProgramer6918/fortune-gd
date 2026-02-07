@@ -1,16 +1,16 @@
 {
 	"geode": "5.0.0-alpha.1",
 	"gd": {
-		"win": "2.2074",
-		"android": "2.2074",
-		"mac": "2.2074",
-		"ios": "2.2074"
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
 	},
 	"id": "noob6918.fortune-gd",
 	"name": "fortune-gd",
 	"version": "v1.0.0",
 	"developer": "Noob6918",
-	"description": "",
+	"description": "A simple mod to port fortune onto gd.",
 	"dependencies": {
 		"geode.node-ids": ">=v1.20.0"
 	}
