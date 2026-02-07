@@ -1,0 +1,17 @@
+{
+	"geode": "5.0.0-alpha.1",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "noob6918.fortune-gd",
+	"name": "fortune-gd",
+	"version": "v1.0.0",
+	"developer": "Noob6918",
+	"description": "",
+	"dependencies": {
+		"geode.node-ids": ">=v1.20.0"
+	}
+}
