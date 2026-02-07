@@ -10,5 +10,8 @@
 	"description": "A simple mod to port fortune onto gd.",
 	"dependencies": {
 		"geode.node-ids": ">=v1.20.0"
+	},
+	"links": {
+		"source": "https://github.com/NoobProgramer6918/fortune-gd"
 	}
 }
